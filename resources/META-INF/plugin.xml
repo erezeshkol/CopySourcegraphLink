@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>com.copysourcegraphlink</id>
+    <name>Copy Sourcegraph Link</name>
+    <version>0.1.0</version>
+    <vendor email="erezeshkol@gmail.com" url="https://github.com/erezeshkol">Erez Eshkol</vendor>
+
+    <description><![CDATA[
+      This plugin lets you create a SourceGraph link that points to the current line.
+      After configuring your development folder and SourceGraph server in the Preferences (under Tools > Copy Sourcegraph Link),
+      simply use the keyboard shortcut (by default, Ctrl+Cmd+S on Macs) to copy a SourceGraph link that points to the current line.
+    ]]></description>
+
+    <change-notes><![CDATA[
+
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="173.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>Git4Idea</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable groupId="tools" displayName="Copy Sourcegraph Link"
+                                 id="preferences.SourcegraphLinkConfigurable" instance="SourcegraphLinkConfigurable"/>
+        <applicationService serviceImplementation="SourcegraphLinkConfig"/>
+    </extensions>
+
+    <actions>
+        <action id="SourcegraphLinkActionId" class="SourcegraphLinkAction"
+                text="Copy Sourcegraph Link" description="Copies a SourceGraph link to the keyboard">
+
+            <keyboard-shortcut first-keystroke="control meta S" keymap="$default"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+
+        </action>
+    </actions>
+
+</idea-plugin>
