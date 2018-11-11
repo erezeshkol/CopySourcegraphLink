@@ -54,7 +54,7 @@
         </constraints>
         <properties>
           <text value=""/>
-          <toolTipText value="The URL of your sourcegraph server. For example, sourcegraph.mycompany.com"/>
+          <toolTipText value=""/>
         </properties>
       </component>
       <component id="221a5" class="javax.swing.JLabel">
@@ -63,7 +63,7 @@
         </constraints>
         <properties>
           <labelFor value="ff83b"/>
-          <text value="The URL of your sourcegraph server. For example, sourcegraph.mycompany.com."/>
+          <text value="The URL of your Sourcegraph server. For example, sourcegraph.mycompany.com."/>
         </properties>
       </component>
       <component id="2e64b" class="javax.swing.JLabel">
@@ -72,7 +72,7 @@
         </constraints>
         <properties>
           <labelFor value="10c21"/>
-          <text value="&lt;html&gt;&#10;The name of your development folder. For example, pg. &lt;br/&gt;&#10;The folders on your computer are expected to have the same structure as those in SourceGraph.&#10;&lt;/html&gt;"/>
+          <text value="&lt;html&gt;&#10;The name of your development folder. For example, pg. &lt;br/&gt;&#10;The folders on your computer are expected to have the same structure as those in Sourcegraph.&#10;&lt;/html&gt;"/>
         </properties>
       </component>
       <component id="10c21" class="javax.swing.JTextField" binding="devFolderField">
@@ -83,7 +83,7 @@
         </constraints>
         <properties>
           <text value=""/>
-          <toolTipText value="The name of your development folder. For example, pg. The folders on your computer are expected to have the same structure as those in SourceGraph."/>
+          <toolTipText value=""/>
         </properties>
       </component>
     </children>
