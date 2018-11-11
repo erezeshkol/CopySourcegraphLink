@@ -19,7 +19,7 @@ public class SourcegraphLinkConfigurable implements SearchableConfigurable {
 
     @Override
     public String getDisplayName() {
-        return "Copy SourceGraph Link Plugin";
+        return "Copy Sourcegraph Link Plugin";
     }
 
     @Override
